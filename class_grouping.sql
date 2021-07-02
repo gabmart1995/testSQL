@@ -16,20 +16,19 @@
 */
 
 /* mostrar suman los articulos de las secciones se crea un alias para manipular la ordenacion */
-/*SELECT seccion, SUM( precio ) AS suma_articulos FROM productos
+SELECT seccion, SUM( precio ) AS suma_articulos FROM productos
   GROUP BY seccion
   ORDER BY suma_articulos DESC;
-*/
+
 /* promedios de ceramica y deportes ordenados de forma ascendente */
-/*SELECT seccion, AVG( precio ) AS premedio_articulos FROM productos
+SELECT seccion, AVG( precio ) AS premedio_articulos FROM productos
   GROUP BY seccion
   HAVING seccion = 'DEPORTES' OR seccion = 'CONFECCIÓN'
   ORDER BY premedio_articulos;
-*/
 
 /* Cuantos clientes hay por poblacion */
-/* SELECT poblacion, COUNT(id_cliente) AS n_clientes FROM clientes
-  GROUP BY poblacion; */
+SELECT poblacion, COUNT(id_cliente) AS n_clientes FROM clientes
+  GROUP BY poblacion;
 
 /* PRECIO MAXIMO del area de confeccion */
 SELECT seccion, MAX(precio) AS precio_max FROM productos

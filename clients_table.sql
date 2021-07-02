@@ -1,5 +1,3 @@
-/* creacion de tabla de clientes curso pildoras informaticas */
-
 CREATE TABLE IF NOT EXISTS Clientes (
   id_cliente INT AUTO_INCREMENT,
   codigo_cliente CHAR(10) NOT NULL,
